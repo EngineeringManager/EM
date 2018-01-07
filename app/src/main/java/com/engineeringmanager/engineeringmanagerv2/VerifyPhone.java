@@ -28,10 +28,10 @@ public class VerifyPhone extends AppCompatActivity {
             }
             else
             {
-                /*startActivityForResult(AuthUI.getInstance()
+                startActivityForResult(AuthUI.getInstance()
                         .createSignInIntentBuilder()
                         .setAvailabeProviders(new AuthUI.IdpConfig
-                        .Builder(AuthUI.PHONE_VERIFICATION_PROVIDER).build()));*/
+                        .Builder(AuthUI.PHONE_VERIFICATION_PROVIDER).build()));
             }
         }
     }
