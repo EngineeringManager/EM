@@ -28,6 +28,7 @@ public class VerifyPhone extends AppCompatActivity {
             }
             else
             {
+
                 startActivityForResult(AuthUI.getInstance()
                         .createSignInIntentBuilder()
                         .setAvailabeProviders(new AuthUI.IdpConfig
