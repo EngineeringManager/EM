@@ -32,6 +32,7 @@ public class VerifyPhone extends AppCompatActivity {
                         .createSignInIntentBuilder()
                         .setAvailabeProviders(new AuthUI.IdpConfig
                         .Builder(AuthUI.PHONE_VERIFICATION_PROVIDER).build()));
+
             }
         }
     }
