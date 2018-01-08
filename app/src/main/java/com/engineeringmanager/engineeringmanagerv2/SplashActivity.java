@@ -1,9 +1,9 @@
 package com.engineeringmanager.engineeringmanagerv2;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeIntent = new Intent(SplashActivity.this, VerifyPhone.class);
+                Intent homeIntent = new Intent(SplashActivity.this, Home.class);
                 startActivity(homeIntent);
                 finish();
             }
