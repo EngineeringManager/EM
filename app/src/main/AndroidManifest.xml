@@ -20,8 +20,17 @@
             android:name=".Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".VerifyPhone" />
-        <activity android:name=".SignIn"></activity>
+        <activity android:name=".SignIn" />
+        <activity
+            android:name=".syllabus"
+            android:label="@string/title_activity_syllabus"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.engineeringmanager.engineeringmanagerv2.Home" />
+        </activity>
+        <activity android:name=".syllabusWebView"></activity>
     </application>
 
 </manifest>
