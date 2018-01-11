@@ -25,7 +25,7 @@ public class syllabusWebView extends AppCompatActivity {
                 webView = (WebView) findViewById(R.id.webviewPDFarea);
                 webView.getSettings().setJavaScriptEnabled(true);
 
-
+                //setWebView
                 String pdf_url = "http://skyjack.com/sites/default/files/warranty.pdf";
                 webView.loadUrl("http://docs.google.com/gview?embedded=true&url=" + pdf_url);
 
