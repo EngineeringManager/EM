@@ -30,7 +30,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.engineeringmanager.engineeringmanagerv2.Home" />
         </activity>
-        <activity android:name=".syllabusWebView"></activity>
+        <activity android:name=".syllabusWebView" />
+        <activity
+            android:name=".questionPapers"
+            android:label="@string/title_activity_question_papers"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.engineeringmanager.engineeringmanagerv2.Home" />
+        </activity>
     </application>
 
 </manifest>
