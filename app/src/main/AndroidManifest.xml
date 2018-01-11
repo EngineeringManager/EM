@@ -30,7 +30,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.engineeringmanager.engineeringmanagerv2.Home" />
         </activity>
-        <activity android:name=".syllabusWebView"></activity>
+        <activity android:name=".syllabusWebView" />
+        <activity
+            android:name=".SyllabusSEBranch"
+            android:label="@string/title_activity_syllabus_sebranch"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

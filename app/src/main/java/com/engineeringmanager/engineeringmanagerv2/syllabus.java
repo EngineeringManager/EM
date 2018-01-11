@@ -87,8 +87,8 @@ public class syllabus extends AppCompatActivity
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(syllabus.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(syllabus.this,syllabusWebView.class);
-                    intent.putExtra("info",Integer.toString(finalI,10));
+                    Intent intent = new Intent(syllabus.this,SyllabusSEBranch.class);
+                 //   intent.putExtra("info",Integer.toString(finalI,10));
                     startActivity(intent);
 
                 }
