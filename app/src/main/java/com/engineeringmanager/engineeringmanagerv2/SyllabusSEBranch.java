@@ -75,7 +75,7 @@ public class SyllabusSEBranch extends AppCompatActivity
             });
         }
     }
-
+        //setEvent
     private void setSingleEvent(GridLayout mainGrid) {
         //Loop all child item of Main Grid
         for (int i = 0; i < mainGrid.getChildCount(); i++) {
