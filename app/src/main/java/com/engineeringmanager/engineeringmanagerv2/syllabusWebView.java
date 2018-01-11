@@ -22,10 +22,16 @@ public class syllabusWebView extends AppCompatActivity {
             if(info.equals("0"))
             {
                 final WebView webView;
-
                 webView = (WebView) findViewById(R.id.webviewPDFarea);
                 webView.getSettings().setJavaScriptEnabled(true);
-                webView.loadUrl("https://drive.google.com/open?id=1c4sos05bVerPHSDbaIrZhWsoBomGE_tH");
+
+
+                String pdf_url = "http://skyjack.com/sites/default/files/warranty.pdf";
+                webView.loadUrl("http://docs.google.com/gview?embedded=true&url=" + pdf_url);
+
+                /*webView = (WebView) findViewById(R.id.webviewPDFarea);
+                webView.getSettings().setJavaScriptEnabled(true);
+                webView.loadUrl("https://drive.google.com/open?id=1c4sos05bVerPHSDbaIrZhWsoBomGE_tH");*/
 
             }
             else if(info.equals("1"))
