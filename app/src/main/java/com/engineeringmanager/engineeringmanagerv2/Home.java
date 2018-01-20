@@ -81,18 +81,16 @@ public class Home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.syllabus) {
             Intent intent = new Intent(Home.this,syllabus.class);
           //  intent.putExtra("info","2");
             startActivity(intent);
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.practicals) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.qpapers) {
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
+        }  else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
