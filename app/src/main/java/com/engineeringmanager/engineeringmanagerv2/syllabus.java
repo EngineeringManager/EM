@@ -86,11 +86,28 @@ public class syllabus extends AppCompatActivity
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(syllabus.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(syllabus.this,SyllabusSEBranch.class);
-                 //   intent.putExtra("info",Integer.toString(finalI,10));
-                    startActivity(intent);
+                    if (finalI==0)
+                    {
+                        String linktobedisplayed="https://drive.google.com/open?id=1Z65MwWIgMCMLdw1wXLI-vvviFjOuat6O";
+                        Toast.makeText(syllabus.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(syllabus.this, syllabusWebView.class);
+                        intent.putExtra("info",linktobedisplayed);
+                        startActivity(intent);
 
+                    }
+                    if(finalI==1) {
+                        Toast.makeText(syllabus.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(syllabus.this, SyllabusSEBranch.class);
+                        //   intent.putExtra("info",Integer.toString(finalI,10));
+                        startActivity(intent);
+                        }
+                        else if (finalI==2){
+                        Toast.makeText(syllabus.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(syllabus.this, SyllabusTEBranch.class);
+                        //   intent.putExtra("info",Integer.toString(finalI,10));
+                        startActivity(intent);
+
+                    }
                 }
             });
         }

@@ -34,6 +34,10 @@
         <activity
             android:name=".SyllabusSEBranch"
             android:label="@string/title_activity_syllabus_sebranch"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SyllabusTEBranch"
+            android:label="@string/title_activity_syllabus_tebranch"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

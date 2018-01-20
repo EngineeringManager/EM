@@ -22,7 +22,7 @@ public class SyllabusSEBranch extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     GridLayout mainGrid;
-
+    String link;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,11 +87,47 @@ public class SyllabusSEBranch extends AppCompatActivity
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(SyllabusSEBranch.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SyllabusSEBranch.this,syllabusWebView.class);
-                    intent.putExtra("info",Integer.toString(finalI,10));
-                    startActivity(intent);
+                    if (finalI==0){
+                        Toast.makeText(SyllabusSEBranch.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(SyllabusSEBranch.this,syllabusWebView.class);
+                        link="https://drive.google.com/open?id=1YadlDUjFRy5bWzQ6oB-tAUFgJazv_diu";
+                        intent.putExtra("info",link);
+                        startActivity(intent);
 
+                    }
+
+                    else if(finalI==1) // This is for SE IT
+                    {
+                        Toast.makeText(SyllabusSEBranch.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(SyllabusSEBranch.this,syllabusWebView.class);
+                        link="https://drive.google.com/open?id=1HJSnU-fz4qmtabzHGiJA7nv_uRN7fPp0";
+                        intent.putExtra("info",link);
+                        startActivity(intent);
+                    }
+                    else if(finalI==2) // This is for SE Civil
+                    {
+                        Toast.makeText(SyllabusSEBranch.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(SyllabusSEBranch.this,syllabusWebView.class);
+                        link="https://drive.google.com/open?id=1wpb_XxrxN4j6vHx0XRUpyBUHR17HWyWd";
+                        intent.putExtra("info",link);
+                        startActivity(intent);
+                    }
+                    else if(finalI==3) // This is for ENTC SE
+                    {
+                        Toast.makeText(SyllabusSEBranch.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(SyllabusSEBranch.this,syllabusWebView.class);
+                        link="https://drive.google.com/open?id=1KGsCvgOy5BXFp0Fo3KvsuM1NKYv8pZvQ";
+                        intent.putExtra("info",link);
+                        startActivity(intent);
+                    }
+                    else if(finalI==4) // This is for SE MECH
+                    {
+                        Toast.makeText(SyllabusSEBranch.this, Integer.toString(finalI), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(SyllabusSEBranch.this,syllabusWebView.class);
+                        link="https://drive.google.com/open?id=1z-deGUG5W1woOgxxT_-wGpLMLum1YCEM";
+                        intent.putExtra("info",link);
+                        startActivity(intent);
+                    }
                 }
             });
         }

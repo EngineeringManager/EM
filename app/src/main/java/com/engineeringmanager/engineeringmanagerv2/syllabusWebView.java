@@ -12,8 +12,7 @@ public class syllabusWebView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_syllabus_web_view);
-
-        if(getIntent() != null)
+ /* if(getIntent() != null)
         {
             String info = getIntent().getStringExtra("info");
             //  txtInfo.setText(info);
@@ -29,9 +28,6 @@ public class syllabusWebView extends AppCompatActivity {
                 String pdf_url = "http://skyjack.com/sites/default/files/warranty.pdf";
                 webView.loadUrl("http://docs.google.com/gview?embedded=true&url=" + pdf_url);
 
-                /*webView = (WebView) findViewById(R.id.webviewPDFarea);
-                webView.getSettings().setJavaScriptEnabled(true);
-                webView.loadUrl("https://drive.google.com/open?id=1c4sos05bVerPHSDbaIrZhWsoBomGE_tH");*/
 
             }
             else if(info.equals("1"))
@@ -58,16 +54,33 @@ public class syllabusWebView extends AppCompatActivity {
 
                 webView = (WebView) findViewById(R.id.webviewPDFarea);
                 webView.getSettings().setJavaScriptEnabled(true);
-                webView.loadUrl("https://drive.google.com/open?id=1uNQxEV8tdfPLYdt0vR6xTNnCjADD70wj");
+                webView.loadUrl("https://facebook.com");
 
             }
-          /* final WebView webView;
+
+
+        }*/
+
+        if(getIntent() != null) {
+            String info = getIntent().getStringExtra("info");
+            final WebView webView;
+
+            webView = (WebView) findViewById(R.id.webviewPDFarea);
+            webView.getSettings().setJavaScriptEnabled(true);
+            webView.loadUrl(info);
+
+
+        }
+
+
+    }
+}
+ /*webView = (WebView) findViewById(R.id.webviewPDFarea);
+                webView.getSettings().setJavaScriptEnabled(true);
+                webView.loadUrl("https://drive.google.com/open?id=1c4sos05bVerPHSDbaIrZhWsoBomGE_tH");*/
+
+  /* final WebView webView;
 
             webView = (WebView) findViewById(R.id.webviewPDFarea);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadUrl("www.google.com");*/
-
-
-        }
-    }
-}
