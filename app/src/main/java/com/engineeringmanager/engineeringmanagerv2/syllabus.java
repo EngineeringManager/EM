@@ -156,6 +156,8 @@ public class syllabus extends AppCompatActivity
         } else if (id == R.id.practicals) {
 
         } else if (id == R.id.qpapers) {
+            Intent intent= new Intent(syllabus.this,questionPapersHome.class);
+            startActivity(intent);
 
         }  else if (id == R.id.nav_share) {
 

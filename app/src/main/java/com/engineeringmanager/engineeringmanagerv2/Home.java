@@ -89,6 +89,9 @@ public class Home extends AppCompatActivity
         } else if (id == R.id.practicals) {
 
         } else if (id == R.id.qpapers) {
+            Intent intent = new Intent(Home.this,questionPapersHome.class);
+            //  intent.putExtra("info","2");
+            startActivity(intent);
 
         }  else if (id == R.id.nav_share) {
 

@@ -9,4 +9,12 @@
     <string name="title_activity_syllabus">syllabus</string>
     <string name="title_activity_syllabus_sebranch">SyllabusSEBranch</string>
     <string name="title_activity_syllabus_tebranch">SyllabusTEBranch</string>
+    <string name="title_activity_question_papers_home">questionPapersHome</string>
+    <string name="title_activity_qp_fe">qpFE</string>
+    <string name="title_activity_qp_se">qpSE</string>
+    <string name="title_activity_qp_te">qpTE</string>
+    <string name="title_activity_qp_be">qpBE</string>
+    <string name="title_activity_qp_secomp">qpSEComp</string>
+    <string name="title_activity_qp_seit">qpSEIT</string>
+    <string name="title_activity_collapse_test">collapseTest</string>
 </resources>

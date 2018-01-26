@@ -38,7 +38,70 @@
         <activity
             android:name=".SyllabusTEBranch"
             android:label="@string/title_activity_syllabus_tebranch"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".questionPapersHome"
+            android:label="@string/title_activity_question_papers_home"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.engineeringmanager.engineeringmanagerv2.Home" />
+        </activity>
+        <activity
+            android:name=".qpFE"
+            android:label="@string/title_activity_qp_fe"
+            android:parentActivityName=".questionPapersHome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.engineeringmanager.engineeringmanagerv2.questionPapersHome" />
+        </activity>
+        <activity
+            android:name=".qpSE"
+            android:label="@string/title_activity_qp_se"
+            android:parentActivityName=".questionPapersHome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.engineeringmanager.engineeringmanagerv2.questionPapersHome" />
+        </activity>
+        <activity
+            android:name=".qpTE"
+            android:label="@string/title_activity_qp_te"
+            android:parentActivityName=".questionPapersHome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.engineeringmanager.engineeringmanagerv2.questionPapersHome" />
+        </activity>
+        <activity
+            android:name=".qpBE"
+            android:label="@string/title_activity_qp_be"
+            android:parentActivityName=".questionPapersHome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.engineeringmanager.engineeringmanagerv2.questionPapersHome" />
+        </activity>
+        <activity
+            android:name=".qpSEComp"
+            android:label="@string/title_activity_qp_secomp"
+            android:parentActivityName=".qpSE"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.engineeringmanager.engineeringmanagerv2.qpSE" />
+        </activity>
+        <activity
+            android:name=".qpSEIT"
+            android:label="@string/title_activity_qp_seit"
+            android:parentActivityName=".qpSE"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.engineeringmanager.engineeringmanagerv2.qpSE" />
+        </activity>
     </application>
 
 </manifest>
