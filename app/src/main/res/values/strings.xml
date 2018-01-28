@@ -17,4 +17,6 @@
     <string name="title_activity_qp_secomp">qpSEComp</string>
     <string name="title_activity_qp_seit">qpSEIT</string>
     <string name="title_activity_collapse_test">collapseTest</string>
+    <string name="title_activity_qp_tecomp">qpTEComp</string>
+    <string name="title_activity_qp_teit">qpTEIT</string>
 </resources>

@@ -26,7 +26,7 @@
 
             <TextView
                 android:id="@+id/textGrid"
-                android:text="Syllabus"
+                android:text="Question Papers"
                 android:textSize="34sp"
                 android:textColor="@android:color/white"
                 android:layout_centerInParent="true"
